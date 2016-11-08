@@ -1,0 +1,18 @@
+public class Main {
+    
+    private static int x = 12;
+    private static int y = 28;
+    private static int z = (int)3.3;
+
+    public static void main(String[] args) {
+        System.out.println("The answer to(x * y) / 3is" + calculate());
+
+    }
+
+    private static double calculate() {
+        double result = (x * y) / z;
+        return result;
+}
+    
+    
+    }
