@@ -1,0 +1,21 @@
+public class Main {
+
+    public static void main(String[] args) {
+    int count1 = 8; 
+    int count2 = 12; 
+    int count3 = 3;
+    
+    int sum;
+    MainCount mc = new MainCount();
+    sum = mc.getnumbers(count1,count2,count3);    
+    System.out.println("sum = " + sum);    
+    }
+}
+    
+class MainCount {
+    public static int getnumbers(int count1, int count2, int count3)
+    {
+        int sum = count1 + count2 + count3;
+        return sum;
+    }
+}
