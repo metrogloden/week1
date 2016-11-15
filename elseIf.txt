@@ -1,0 +1,50 @@
+public class Main {
+    
+    int currentSpeed = 100;
+    
+    public static void main(String[] args) {
+    
+    Main m = new Main();
+    m.isMoving();
+    m.applyBrakes(20);
+    m.howFast();
+    
+}
+    private boolean isMoving() { 
+       
+       if (currentSpeed > 0)
+            return true;
+        else
+            return false;
+        
+     }
+
+
+    public void applyBrakes(int speed) {
+       if(isMoving())
+       currentSpeed = currentSpeed - speed;
+       //System.out.println(currentSpeed);
+        /* if the bicycle is moving
+        then decrease the speed
+        */
+    }
+
+    public void howFast() {
+        if (isMoving())
+            if (currentSpeed > 100)
+                currentSpeed = currentSpeed - 10;
+            else
+                currentSpeed = currentSpeed + 20;
+        else
+            currentSpeed = 100;
+                System.out.println(currentSpeed);
+            
+       
+       
+        /*if the bicycle is moving
+            if the speed > 100 decrease the speed
+            else increase the speed
+          else set the minimum speed
+        */
+    }
+}
