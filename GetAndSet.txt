@@ -1,0 +1,24 @@
+public class Main {
+    
+    private String dog;
+    
+    public static void main(String[] args) {
+      Main m = new Main();
+      m.setvariable("chow");
+      //System.out.println(m.getvariable());
+      m.printvariable();
+    }
+public void setvariable(String dogType) { 
+        
+        dog = dogType;
+}
+
+public String getvariable() {
+        
+        return dog;
+}  
+
+public void printvariable() {
+    System.out.println("You are a " + getvariable() + " Breed");
+}
+}
