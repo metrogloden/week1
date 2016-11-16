@@ -1,0 +1,28 @@
+
+public class Main {
+    public static void main(String[] args) {
+        int [] stockPrices = {30, 6, 25, 99, 4, 33};
+        System.out.println("Maximum Profit: " + getMaxProfit(stockPrices));
+    }
+    public static int getMaxProfit(int [] stockPrices) {
+        if(stockPrices.length < 2) {
+            return 0;
+        }
+        
+        int min = stockPrices[0];
+        int profit = 0;
+        for(int i = 1; i < stockPrices.length; i++) {
+            if(stockPrices [i] < min) {
+                min = stockPrices[i];
+            }
+            
+            int potentialProfit = stockPrices[i] - min;
+            if(potentialProfit > profit) {
+                profit = potentialProfit;
+            }
+        }
+        return profit;
+        
+    }
+}
+
