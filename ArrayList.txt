@@ -1,0 +1,31 @@
+import java.util.Random;
+import java.util.ArrayList;
+
+public class Main {
+    public int i;
+
+    public static void main(String[] args) {
+       ArrayList<String> dogs = new ArrayList<>();
+       System.out.printf("dog\tBreed\n");
+       int size[]={8,7,6,5,4,3,2,1};
+
+        for(int counter=0;counter<size.length;counter++) {
+            System.out.println(counter + "\t" + size[counter]);
+       
+       dogs.add("pug");
+       dogs.add("poodle");
+       dogs.add( "lhaso");
+       dogs.add("poodle");
+       dogs.add("golden retriever");
+       dogs.add("lab");
+       dogs.add("cavalier");
+       dogs.remove("german shepard");
+
+       System.out.println(dogs);
+
+
+    }
+    
+}
+
+}
