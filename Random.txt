@@ -1,0 +1,32 @@
+import java.util.Random;
+
+public class Main {
+
+   public static void main(String... args) {
+        Main m = new Main();
+        Random dice = new Random();
+        int number;
+        int min = 3;
+        int max = 20;
+        
+        for(int counter=1; counter<=10;counter++) {
+            int f =m.getRandomInt(min, max);
+            
+            System.out.println(f + " ");
+        }
+   }
+
+
+    public int getRandomInt(int min, int max) {
+        Random random = new Random();
+        int number = random.nextInt(max);
+        if(number < min)
+            number = min + number;
+        
+        System.out.println(number);
+        
+        return number;
+         
+    }
+}
+
