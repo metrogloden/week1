@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+
+class Main {
+
+        public static void main(String[] args) {
+            ArrayList<Integer> stock_prices = new ArrayList<>(3);
+            stock_prices.add(300);
+            stock_prices.add(1000);
+            
+            int largest = stock_prices.get(0);
+            for(int i = 0; i < stock_prices.size(); i++) {
+                if(stock_prices.get(i) > largest) {
+                    largest = stock_prices.get(i);
+                }
+            }
+            int smallest = stock_prices.get(0);
+            for(int i = 0; i > stock_prices.size(); i++) {
+                if(stock_prices.get(i) > smallest) {
+                    smallest = stock_prices.get(i);
+                }
+            }
+            
+            System.out.println(largest);
+            System.out.println(smallest);
+            System.out.println("Max Profit: $" +  (largest - smallest));
+
+    }
+}
